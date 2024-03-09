@@ -1,28 +1,43 @@
 /* Use Open Sans as the default sans serif font. */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700|Source+Code+Pro:300,400,500,700");
 
-/* Set up some CSS variables to theme the application. */
-:root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
-}
-
-/* Change bootstrap variable values.
- See https://getbootstrap.com/docs/5.2/customize/css-variables/
- */
 body {
-  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  background-color: black;
+  font-family: "Anton", sans-serif !important;
 }
 
-/* Set the alert background on the signin and signup pages. */
-#signin-page .alert-light, #signup-page .alert-light {
-  --bs-alert-bg: var(--matr-navbar-bg);
+#bottom {
+  font-size: 9px;
 }
 
-/* Define custom styles */
-.gray-background {
-  background-color: var(--matr-navbar-bg);
-  color: var(--bs-dark);
-  padding-top: 10px;
-  padding-bottom: 20px;
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.carousel-image {
+  height: 100%; /* Make image take the full height of the carousel */
+  object-fit: cover; /* Cover the area properly without losing aspect ratio */
+}
+
+.custom-bg-black {
+  background-color: black !important;
+}
+
+.custom-text-yellow {
+  color: #F3DD78 !important;
+}
+
+.custom-button {
+  background-color: #F3DD78 !important;
+  color: black !important;
+  width: 210px !important;
+  border: 2px solid transparent !important;
+  border-radius: 0 !important;
+}
+
+.custom-button:hover {
+  background-color: black !important;
+  color: #F3DD78 !important;
+  border-color: #F3DD78 !important;
 }
